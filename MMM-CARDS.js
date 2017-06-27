@@ -53,8 +53,6 @@ Module.register("MMM-CARDS", {
          header.innerHTML = this.config.header;
          wrapper.appendChild(header);
 		
-		
-
 
         var cardsKeys = Object.keys(this.cards);
         if (cardsKeys.length > 0) {
@@ -63,10 +61,7 @@ Module.register("MMM-CARDS", {
             }
             var cards = this.cards[cardsKeys[this.activeItem]];
 
-		for (var i = 0; i < cards.length; i++) {
-                var cards = cards[i];	
-			
-			
+		console.log(cards);
 
 
             var top = document.createElement("div");
@@ -74,8 +69,7 @@ Module.register("MMM-CARDS", {
 
             var pic = document.createElement("div");
             var img = document.createElement("img");
-			img.classList.add("photo");	
-            img.src = cards[0].image; // I tried cards.data[0].image; with processCARDS comment
+            img.src = cards.image; // I tried cards.data[0].image; with processCARDS comment
             pic.appendChild(img);
             wrapper.appendChild(pic);
 			
@@ -92,8 +86,8 @@ Module.register("MMM-CARDS", {
         //    setTimeout(function() {
         //        cardsAnswer.innerHTML = "What is " + cards.answer + "?"
         //    }, 20 * 1000);
-			} 
-        }
+		
+			}
         return wrapper;
     },
 
@@ -101,7 +95,6 @@ Module.register("MMM-CARDS", {
     processCARDS: function(data) {
         this.today = data.Today;
         this.cards = data; // with this.cards = data.items;
-      console.log(this.cards); // checking my data
         this.loaded = true;
     },
 
@@ -118,7 +111,6 @@ Module.register("MMM-CARDS", {
             this.getCARDS();
         }, this.config.updateInterval);
         this.getCARDS(this.config.initialLoadDelay);
-        var self = this;
     },
 
     getCARDS: function() {
