@@ -79,7 +79,7 @@ Module.register("MMM-CARDS", {
             pic.appendChild(img);
             wrapper.appendChild(pic);
 			
-		// FOR MORE CARDS 5? for five card stud? One for each card?	
+		// FOR MORE CARDS 5? for five card stud. One of these for each card.
 		//	var pic2 = document.createElement("div");
         //    var img2 = document.createElement("img");
 		//	img.classList.add("photo2");	
