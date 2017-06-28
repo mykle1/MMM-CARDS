@@ -66,20 +66,33 @@ Module.register("MMM-CARDS", {
 
             var top = document.createElement("div");
             top.classList.add("list-row");
-
+		// card # 1
             var pic = document.createElement("div");
             var img = document.createElement("img");
-            img.src = cards.image; // I tried cards.data[0].image; with processCARDS comment
+			img.classList.add("photo");
+            img.src = cards[0].image; // I tried cards.data[0].image; with processCARDS comment
             pic.appendChild(img);
             wrapper.appendChild(pic);
+		 	
+		// card #2 for five card stud. One of these for each card.
+			var pic2 = document.createElement("div");
+            var img2 = document.createElement("img");
+			img2.classList.add("photo");	
+			setTimeout(function() {
+                img2.src = cards[1].image; // can't get second object/card image
+            }, 10 * 1000);
+			pic2.appendChild(img2);
+			wrapper.appendChild(pic2);
 			
-		// FOR MORE CARDS 5? for five card stud. One of these for each card.
-		//	var pic2 = document.createElement("div");
-        //    var img2 = document.createElement("img");
-		//	img.classList.add("photo2");	
-        //    img2.src = cards[0].image
-        //    pic2.appendChild(img2);
-        //    wrapper.appendChild(pic2);
+					
+	//		var jeopardyAnswer = document.createElement("div");
+    //        jeopardyAnswer.classList.add("small", "bright");
+    //        setTimeout(function() {
+    //            jeopardyAnswer.innerHTML = "What is " + jeopardy.answer + "?"
+    //        }, 20 * 1000);
+   //        wrapper.appendChild(jeopardyAnswer);
+    //    }
+   //     return wrapper;
 			
 			
         // GET 5 CARDS AND USE THIS TO HAVE THEM APPEAR ONE AFTER THE OTHER.
@@ -94,7 +107,8 @@ Module.register("MMM-CARDS", {
 
     processCARDS: function(data) {
         this.today = data.Today;
-        this.cards = data; // with this.cards = data.items;
+        this.cards = data.items; // with this.cards = data.items;
+	//	console.log(this.cards); // checking my data
         this.loaded = true;
     },
 
