@@ -4,23 +4,32 @@
  * Pick your color, copy and paste the HEX number. Example - #62FF00 = bright green.
  */
 
-.MMM-CARDS .xsmall.bright.light {
-  color: white;               /* Header color. Default is white. */
-  text-align: left;           /* Align header text. (left, center, right) */
+.MMM-CARDS .header {
+  color: yellow;               /* Header color. Default is white. */
+  text-align: left;            /* Algin header text  */
 }
 
-.MMM-CARDS .xsmall.bright {
-  color: white;               /* Color the clue. Default is white. */
-  text-align: left;           /* Align the clue. (left, center, right) */
+.MMM-CARDS .photo {            /* adjust size of card 1 */
+  width: 19%;
+  float: right;
 }
 
-.MMM-CARDS .small.bright {
-  color: yellow;               /* Color the answer. Default is white. */
-  text-align: left;           /* Align the answer. (left, center, right) */
+.MMM-CARDS .photo2 {            /* adjust size of card 1 */
+  width: 19%;
+  float: right;
 }
 
-/* Uncomment below if you don't like Alex Trebec and want to remove the picture
+.MMM-CARDS .photo3 {            /* adjust size of card 1 */
+  width: 19%;
+  float: right;
+}
 
-.MMM-CARDS .photo {
-  display: none;  /* Align the answer. (left, center, right) */ /*
-} */
+.MMM-CARDS .photo4 {            /* adjust size of card 1 */
+  width: 19%;
+  float: right;
+}
+
+.MMM-CARDS .photo5 {            /* adjust size of card 1 */
+  width: 19%;
+  float: right;
+}
