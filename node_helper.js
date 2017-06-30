@@ -21,12 +21,7 @@ module.exports = NodeHelper.create({
             method: 'GET'
         }, (error, response, body) => {
             if (!error && response.statusCode == 200) {
-				var cards = JSON.stringify(cards, null, 2);
-				var result = JSON.parse(cards);
-        //        var result = JSON.parse(body).cards; // .cards // Parsing an array
-				
-				
-				console.log(response.statusCode + result);
+				var result = JSON.parse(body);
                     this.sendSocketNotification('CARDS_RESULT', result);
             }
         });
