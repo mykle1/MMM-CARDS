@@ -53,16 +53,7 @@ Module.register("MMM-CARDS", {
          header.innerHTML = this.config.header;
          wrapper.appendChild(header);
 		
-
-        var cardsKeys = Object.keys(this.cards);
-        if (cardsKeys.length > 0) {
-            if (this.activeItem >= cardsKeys.length) {
-                this.activeItem = 0;
-            }
-            var cards = this.cards[cardsKeys[this.activeItem]];
-
-		console.log(cards);
-
+        var cards = this.cards;
 
             var top = document.createElement("div");
             top.classList.add("list-row");
@@ -83,32 +74,16 @@ Module.register("MMM-CARDS", {
             }, 10 * 1000);
 			pic2.appendChild(img2);
 			wrapper.appendChild(pic2);
-			
-					
-	//		var jeopardyAnswer = document.createElement("div");
-    //        jeopardyAnswer.classList.add("small", "bright");
-    //        setTimeout(function() {
-    //            jeopardyAnswer.innerHTML = "What is " + jeopardy.answer + "?"
-    //        }, 20 * 1000);
-   //        wrapper.appendChild(jeopardyAnswer);
-    //    }
-   //     return wrapper;
+			//}
 			
 			
-        // GET 5 CARDS AND USE THIS TO HAVE THEM APPEAR ONE AFTER THE OTHER.
-        //    setTimeout(function() {
-        //        cardsAnswer.innerHTML = "What is " + cards.answer + "?"
-        //    }, 20 * 1000);
-		
-			}
         return wrapper;
     },
 
 
     processCARDS: function(data) {
         this.today = data.Today;
-        this.cards = data.items; // with this.cards = data.items;
-	//	console.log(this.cards); // checking my data
+        this.cards = data.cards; // with this.cards = data.items;
         this.loaded = true;
     },
 
