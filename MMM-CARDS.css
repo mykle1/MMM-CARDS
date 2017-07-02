@@ -10,26 +10,77 @@
 }
 
 .MMM-CARDS .photo {            /* adjust size of card 1 */
-  width: 19%;
-  float: right;
+  width: 18%;
+  margin-right: 4px;
+  margin-bottom: 14px;
+  float: left;
 }
 
 .MMM-CARDS .photo2 {            /* adjust size of card 1 */
-  width: 19%;
-  float: right;
+  width: 18%;
+  margin-right: 4px;
+  margin-bottom: 14px;
+  float: left;
 }
 
 .MMM-CARDS .photo3 {            /* adjust size of card 1 */
-  width: 19%;
-  float: right;
+  width: 18%;
+  margin-right: 4px;
+  margin-bottom: 14px;
+  float: left;
 }
 
 .MMM-CARDS .photo4 {            /* adjust size of card 1 */
-  width: 19%;
-  float: right;
+  width: 18%;
+  margin-right: 4px;
+  margin-bottom: 14px;
+  float: left;
 }
 
 .MMM-CARDS .photo5 {            /* adjust size of card 1 */
-  width: 19%;
-  float: right;
+  width: 18%;
+  margin-right: 4px;
+  margin-bottom: 14px;
+  float: left;
+}
+
+
+.MMM-CARDS .xsmall.bright.spacer {            /* text spacer between cards */
+  color: #62FF00;
+  text-align: left;
+}
+
+.MMM-CARDS .photo6 {            /* adjust size of card 1 */
+  width: 18%;
+  margin-right: 4px;
+  margin-top: 4px;
+  float: left;
+}
+
+.MMM-CARDS .photo7 {            /* adjust size of card 1 */
+  width: 18%;
+  margin-right: 4px;
+  margin-top: 4px;
+  float: left;
+}
+
+.MMM-CARDS .photo8 {            /* adjust size of card 1 */
+  width: 18%;
+  margin-right: 4px;
+  margin-top: 4px;
+  float: left;
+}
+
+.MMM-CARDS .photo9 {            /* adjust size of card 1 */
+  width: 18%;
+  margin-right: 4px;
+  margin-top: 4px;
+  float: left;
+}
+
+.MMM-CARDS .photo10 {            /* adjust size of card 1 */
+  width: 18%;
+  margin-right: 4px;
+  margin-top: 4px;
+  float: left;
 }
