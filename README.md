@@ -13,7 +13,7 @@ When the hand is over, a new hand starts with newly shuffled deck of 52 cards.
 
 ## Examples
 
-* You mirror's hand being exposed
+* Your mirror's hand being exposed
 
 ![](pix/1.JPG)
 
@@ -32,10 +32,10 @@ When the hand is over, a new hand starts with newly shuffled deck of 52 cards.
         module: 'MMM-CARDS',
         position: 'top_left',
         config: { 
-		    useHeader: false,              // true if you want a header
+	    useHeader: false,              // true if you want a header
             header: "5 Card Stud Poker",   // Any text you want
-		    maxWidth: "100%",             // Stretch or constrain according to region
-		    animationSpeed: 3000,          // New clue fades in and out
+	    maxWidth: "100%",              // Stretch or constrain according to region
+	    animationSpeed: 3000,          // New clue fades in and out
         }
     },
 	
